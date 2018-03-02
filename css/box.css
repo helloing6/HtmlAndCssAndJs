@@ -41,7 +41,7 @@ body{
     margin: 0 auto;/*--水平居中--*/
 }
 .logo{
-    height: 50px;
+    height: 80px;
     background-color: #FFF;
 }
 
@@ -87,19 +87,115 @@ body{
     float: left;
     height: 40px;
 }
-/*.nav_mid_left,.nav_mid_right{*/
-    /*float: left;*/
-/*}*/
-/*.nav_mid_left{*/
-    /*width: 680px;*/
-/*}*/
-/*.nav_mid_right{*/
-    /*width: 300px;*/
-/*}*/
-/*.nav_mid_left li{*/
-    /*float: left;*/
-    /*list-style-type: none;*/
-    /*width: 100px;*/
-    /*text-align: center;*/
-    /*line-height: 40px;*/
-/*}*/
+.nav_mid_left,.nav_mid_right{
+    float: left;
+}
+.nav_mid_left{
+    width: 680px;
+}
+.nav_mid_right{
+    width: 300px;
+}
+.nav_mid_left li{
+    float: left;
+    list-style-type: none;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;  /*--将字体的高度设置为容器的宽高，就实现了文字居中--*/
+}
+
+/*--导航未点击和点击过后的状态--*/
+.nav_mid_left a:link,.nav_mid_left a:visited{
+    text-decoration: none; /*去掉下划线*/
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+
+/*--导航经过和点击过后的状态--*/
+.nav_mid_left a:hover,.nav_mid_left a:active{
+    text-decoration: none; /*去掉下划线*/
+    color: #FF0;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+
+/*搜索框的样式*/
+.search_text{
+    width: 190px;
+    height: 25px;
+    margin-top: 5px;
+    background: url("../image/logo_s.png") no-repeat right center; /*给搜索框添加背景,重复方式，位置*/
+    background-color: #FFFFFF;
+    padding-right: 25px;  /*右边内边距*/
+}
+
+/*滚动栏样式*/
+.ad{
+    height: 300px;
+}
+
+.main{
+    height: 250px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.news{
+    width: 340px;
+    border: 1px solid #E8E8E8;
+}
+
+.course{
+    width: 410px;
+    border: 1px solid #E8E8E8;
+    background-color: #0099ff;
+    margin: 0 7px;
+}
+
+.sidebar{
+    width: 230px;
+    background-color: #FFFF00;
+}
+.news,.course,.sidebar{
+    height: 250px;
+    float: left;
+}
+
+/*新闻中心*/
+.title{
+    height: 35px;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.title_left{
+    width: 70%;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    font-weight: bold;
+    color: #786F66;
+    float: left;
+    line-height: 35px;
+    padding-left: 20px;
+}
+
+.titl_right{
+    width: 20%;
+    float: right;
+    line-height: 35px;
+}
+
+.titl_right a{
+    text-decoration: none;/*去掉下划线*/
+    color: #999999;
+}
+
+.pic_news{
+    height: 80px;
+    margin-top: 10px;
+}
+
+.pic_news img{
+    float: left;
+    margin: 0 5px;
+}
